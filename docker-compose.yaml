@@ -10,5 +10,5 @@ services:
     environment:
       RESOLVER: 8.8.8.8
       LISTTEN_PORT: 3128
-      HTTP_PASSWD: songhanpoo:{SHA}mpnrfKFoK25yWYjthWYYTGz/xXc=
       DOLLAR: $
+      HTTP_PASSWD: songhanpoo:{SHA}mpnrfKFoK25yWYjthWYYTGz/xXc=
