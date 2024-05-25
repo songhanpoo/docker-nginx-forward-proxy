@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  proxy:
+    build:
+      context: ./nginx-core/
+    image: nginx-forward-proxy:0.0.1
+    ports:
+      - "3128:3128"
+    environment:
+      RESOLVER: 8.8.8.8
+      LISTTEN_PORT: 3128
+      HTTP_PASSWD: songhanpoo:{SHA}mpnrfKFoK25yWYjthWYYTGz/xXc=
+      DOLLAR: $
